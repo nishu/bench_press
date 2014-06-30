@@ -74,7 +74,7 @@ module BenchPress
     end
 
     def mac?
-      Facter.kernel =~ /Darwin/
+      facts['kernel'] =~ /Darwin/
     end
   end
 end
